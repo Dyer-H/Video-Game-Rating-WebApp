@@ -1,0 +1,51 @@
+@font-face {
+    font-family: 'Pixel';
+    src: url('/static/Minecraft.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+* {
+    font-family: 'Pixel', sans-serif;
+}
+
+body{
+    margin: 0;
+    padding: 1vh 0 0 0;
+    width: 100vw;
+    height: 99vh;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+.navbar nav ul{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 1vw;
+    padding: 0 3vw;
+    width: 92vw;
+    height: 7vh;
+    list-style-type: none;
+    background-color: rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(80px);
+    border-radius: 10px;
+}
+
+.navbar nav ul li{
+    display: inline;
+    padding: 8px 20px;
+    border-radius: 10px;
+    transition: background-color 0.8s;
+}
+
+.navbar nav ul li a{
+    margin: 0;
+    text-decoration: none;
+    transition: color 0.8s;
+}
+
+.content{
+    height: 92vh;
+}

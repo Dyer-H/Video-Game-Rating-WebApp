@@ -1,0 +1,26 @@
+{% extends 'base.html' %}
+{% block title %}Edit{% endblock %}
+{% block style %}<link href="/static/editstyle.css" rel="stylesheet">{% endblock %}
+{% block content %}
+    <div>
+        <div class="table-container">
+            <div class="head">
+                <p>Game Name</p><p>Rating</p>
+            </div>
+            <div class="data">
+            </div>
+        </div>
+    </div>
+    <div>
+        <div class="update-box">
+            <label for="name">Video Game Name:</label>
+            <input type="text" name="name" id="name" maxlength="50">
+            <label for="rating">Rating: <span id="slider-val"></span></label>
+            <input type="range" min="0" max="10" value="5" step="0.1" id="rating">
+            <button id="update-button" onclick="updateRating()">Update</button>
+            <button id="delete-button" onclick="deleteRating()">Delete</button>
+            <p class="message"></p>
+        </div>
+    </div>
+    <script src="/static/editcode.js"></script>
+{% endblock %}

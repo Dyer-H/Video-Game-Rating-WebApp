@@ -1,0 +1,66 @@
+body{
+    background-image: url("/static/pixelsunset.png");
+}
+
+p{
+    margin: 0;
+    cursor: default;
+}
+
+.navbar nav ul li a{
+    color: #F2716B;
+}
+
+.navbar nav ul li:hover{
+    background-color: #F2716B;
+}
+
+.navbar nav ul li:hover > a {
+    color: #282F50;
+}
+
+.content{
+    display: flex;
+    justify-content: center;
+}
+
+.table-container{
+    width: 50%;
+    margin: 20px 0;
+    background-color: rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(80px);
+    border-radius: 10px;
+}
+
+.table-container > *{
+    display: grid;
+    grid-template-columns: 50% 25% 25%;
+    word-wrap: break-word;
+}
+
+.table-container .head{
+    grid-template-rows: 3em;
+    border-bottom: double 4px #1B1F32;
+}
+
+.table-container .data{
+    height: calc(92vh - 44px - 3em);
+    grid-auto-rows: max-content;
+    overflow: scroll;
+}
+
+.table-container .data > *{
+    padding: 10px 0;
+}
+
+.table-container .data >:nth-child(n+4){
+    border-top: solid 2px #1B1F32;
+}
+
+.table-container > * > *{
+    color: #F2716B;
+    text-align: center;
+    align-content: center;
+}
+
+

@@ -1,0 +1,175 @@
+@font-face {
+    font-family: 'Pixel';
+    src: url('/static/Minecraft.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+* {
+    font-family: 'Pixel', sans-serif;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    height: 100vh;
+}
+
+h1, h3, p{
+    cursor: default;
+}
+
+input{
+    height: 2em;
+    border-radius: 5px;
+    margin-bottom: 15px;
+    width: calc(100% - 10px);
+}
+
+input:focus{
+    outline: none;
+}
+
+button{
+    height: 2.5em;
+    border-radius: 5px;
+    margin: 15px 0px;
+    cursor: pointer;
+    width: 100%;
+}
+
+img{
+    width: 48vw;
+    height: 96vh;
+    object-fit: cover;
+    border-radius: 20px;
+}
+
+.error{
+    height: 1.5em;
+    color: red;
+    opacity: 1;
+}
+
+.fadeout{
+    opacity: 0;
+    transition: opacity 5s;
+}
+
+.snapin{
+    transition: none !important;
+}
+
+.login-page, .createacc-page{
+    grid-template-columns: 50% 50%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.login-page{
+    display: grid;
+    background: radial-gradient(circle, rgba(82, 3, 46, 1) 0%, rgba(33, 33, 33, 1) 100%);
+}
+
+.login-page > :nth-child(1), .createacc-page > :nth-child(2){
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 10px 10% 10px 10%;
+    overflow: auto;
+}
+
+.login-page h1{
+    color: white;
+    margin-bottom: 0px;
+}
+
+.login-page h3{
+    color: #733655;
+    margin-bottom: 30px;
+}
+
+.login-page label{
+    color: #FF91D3;
+    margin-bottom: 5px;
+}
+
+.login-page input{
+    text-indent: 5px;
+}
+
+.login-page button{
+    background-color: #7D6F93;
+}
+
+.login-page > * > .error{
+    align-self: center;
+}
+
+.newacc{
+    font-size: 0.7em;
+    color: #733655;
+    align-self: center;
+}
+
+.login-page span{
+    cursor: pointer;
+    color: #FF91D3;
+}
+
+.login-page > :nth-child(2), .createacc-page > :nth-child(1){
+    margin: 2vh 1vw;
+}
+
+.createacc-page{
+    display: none;
+    background: radial-gradient(circle,rgba(46, 72, 115, 1) 0%, rgba(48, 48, 48, 1) 100%);
+}
+
+.createacc-page > :nth-child(2){
+    align-items: flex-end;
+}
+
+.createacc-page label{
+    color:#22BBCB;
+    margin-bottom: 5px;
+}
+
+.createacc-page h1{
+    color: white;
+    margin-bottom: 30px;
+}
+
+.createacc-page button{
+    background-color: #123344;
+    color: white;
+}
+
+.createacc-page input{
+    text-align: right;
+    padding-right: 5px;
+}
+
+#backarrow{
+    width: 30px;
+    height: 30px;
+    object-fit: contain;
+    border-radius: none;
+}
+
+.returntologin{
+    display:flex;
+    align-items: center;
+}
+
+.returntologin img{
+    filter: invert(59%) sepia(90%) saturate(384%) hue-rotate(137deg) brightness(88%) contrast(92%);
+    cursor: pointer;
+}
+
+.returntologin label{
+    color:#22BBCB;
+    cursor: pointer;
+    margin: 0px;
+}

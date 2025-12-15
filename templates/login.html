@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Login</title>
+    <link href="/static/loginstyle.css" rel="stylesheet">
+</head>
+<body>
+    <div class="login-page">
+        <div>
+            <h1>Welcome to Dyer's Video Game Ratings</h1>
+            <h3>Sign in to get literally any functionality</h3>
+            <label for="loginusername">Username</label>
+            <input type="text" name="loginusername" id="loginusername" maxlength="36">
+            <label for="loginpassword">Password</label>
+            <input type="password" name="loginpassword" id="loginpassword" maxlength="72">
+            <button onclick="loginUser()">Sign in</button>
+            <p class="newacc">Don't have an account? <span onclick="openCreateAccPage()">Create an Account</span></p>
+            <p class="error"></p>
+        </div>
+        <div>
+            <img src="/static/pixellake.jpg">
+        </div>
+    </div>
+    <div class="createacc-page">
+        <div>
+            <img src="/static/pixelgorge.jpg">
+        </div>
+        <div>
+            <div class="returntologin">
+                <img src="/static/backarrow.png" id="backarrow" onclick="openLoginPage()">
+                <label for="backarrow" onclick="openLoginPage()">Return to sign in</label>
+            </div>
+            <h1>Create an account</h1>
+            <label for="createusername">Username</label>
+            <input type="text" name="createusername" id="createusername" maxlength="36">
+            <label for="createpassword">Password</label>
+            <input type="password" name="createpassword" id="createpassword" maxlength="72">
+            <button onclick="createUser()">Create Account</button>
+            <p class="error"></p>
+        </div>
+    </div>
+    <script src="/static/logincode.js"></script>
+</body>
+</html>
