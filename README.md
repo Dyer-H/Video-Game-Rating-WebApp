@@ -10,4 +10,5 @@ Makes use of Python, HTML, CSS, and Javascript. Python packages used mentioned a
 
 # Author Info
 Name: Dyer Hunting
+
 Contact: https://www.linkedin.com/in/dyer-hunting/
