@@ -8,3 +8,6 @@ Once you have cloned the repo, run the file labeled final.py. This project is ho
 
 ## Features & Technology Stack
 Makes use of Python, HTML, CSS, and Javascript. Python packages used mentioned above. Javascript makes use of AJAX requests to avoid form reloading. This also means that the script hosts some internal APIs.
+
+## Demo
+https://github.com/user-attachments/assets/e54a4a49-8cb7-4298-9cfd-01031dc96730
